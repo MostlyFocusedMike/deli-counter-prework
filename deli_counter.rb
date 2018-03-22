@@ -2,7 +2,7 @@ def line(line)
   customers = []
   if line.length == 0
     puts "The line is currently empty."
-  elsif 
+  else 
     line.each_with_index {|name,index|
       customers << "#{index + 1}: #{name}"
     }
@@ -16,6 +16,9 @@ def take_a_number(line, name)
 end
 
 def now_serving(line) 
-  return ""
-  puts "Currently serving #{line.shift()}"
+  if line.length == 0
+    puts "There is nobody waiting to be served!" 
+  else 
+    puts "Currently serving #{line.shift()}"
+  end
 end
