@@ -7,7 +7,7 @@ def line(line)
       customers << "#{index + 1}: #{name}"
     }
     puts "The line is currently: #{customers.join(", ")}"
-  end
+  endlear
 end
 
 def take_a_number(line, name)
