@@ -4,7 +4,7 @@ def line(line)
     puts "The line is currently empty."
   else 
     line.each_with_index {|name,index|
-      customers << "#{index + 1}: #{name}"
+      customers << "#{index + 1}. #{name}"
     }
     puts "The line is currently: #{customers.join(" ")}"
   end
