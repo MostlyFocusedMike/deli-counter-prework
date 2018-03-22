@@ -1,1 +1,0 @@
-katz_deli = []
